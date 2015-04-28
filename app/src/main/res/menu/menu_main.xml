@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_clear"
+          android:title="Clear Decks" />
+    <item android:id="@+id/menu_edit"
+          android:title="Edit Cards"></item>
+    <item android:id="@+id/menu_save"
+        android:title="Save Cards"></item>
+    <item android:id="@+id/menu_import"
+        android:title="Import Cards"></item>
+</menu>
