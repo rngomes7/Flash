@@ -73,10 +73,9 @@ public class study extends Activity implements View.OnClickListener
             }
             case R.id.next_card_button:
             {
-                if(currentQues!=null)
-                {
-                    question.setText(currentQues.getQuestion());
-                }
+                currentQues = MainActivity.myDeck.getCard(false);
+                question.setText(currentQues.getQuestion());
+
                 break;
 
             }
