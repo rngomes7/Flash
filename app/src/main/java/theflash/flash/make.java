@@ -41,7 +41,7 @@ public class make extends Activity implements OnClickListener
         {
             case R.id.button_addCard:
             {
-                if(input_ques.getText().toString().equals("")&&input_ans.getText().toString().equals(""))
+                if(input_ques.getText().toString().equals("")||input_ans.getText().toString().equals(""))
                 {
                     Toast.makeText(make.this, "You did not enter a question or an answer", Toast.LENGTH_LONG).show();
                 }
