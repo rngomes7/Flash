@@ -13,14 +13,14 @@ public class scoring {
         wrong=0;
     }
 
-    public int getRight()
+    public String getRight()
     {
-        return right;
+        return (Integer.toString(right));
     }
 
-    public int getWrong()
+    public String getWrong()
     {
-        return wrong;
+        return (Integer.toString(wrong));
     }
 
     public void incRight()
