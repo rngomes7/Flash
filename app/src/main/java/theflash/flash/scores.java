@@ -30,8 +30,8 @@ public class scores extends Activity implements View.OnClickListener
         percent_wrong_text=(TextView)findViewById(R.id.percent_wrong_text);
 
        // score = study_answer.score1;
-        percent_right_text.setText(study_answer.score1.getRight());
-        percent_wrong_text.setText(study_answer.score1.getWrong());
+        percent_right_text.setText(MainActivity.score1.getRight());
+        percent_wrong_text.setText(MainActivity.score1.getWrong());
 
     }
 
