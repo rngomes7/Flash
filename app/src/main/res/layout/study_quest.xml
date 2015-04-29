@@ -36,21 +36,6 @@
         android:textSize="20sp"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Next Question"
-        android:id="@+id/next_card_button"
-        android:layout_below="@+id/show_ans_button"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp"
-        android:background="#ffb6b6b6"
-        android:textColor="#ff1f36ff"
-        android:textSize="20sp"/>
-
-    <Button
         android:id="@+id/back_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

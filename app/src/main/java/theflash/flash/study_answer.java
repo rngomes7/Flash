@@ -52,7 +52,7 @@ public class study_answer extends Activity implements View.OnClickListener
            }
            case R.id.wrong_button:
            {
-               score1.incWrong();
+               score.incWrong();
                finish();
                break;
            }
