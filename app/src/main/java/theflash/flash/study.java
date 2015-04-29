@@ -19,7 +19,6 @@ import android.widget.Toast;
 public class study extends Activity implements View.OnClickListener
 {
     TextView question;
-    Button next_Question;
     Button back_button;
     Button show_answer;
     String answer;
@@ -33,11 +32,9 @@ public class study extends Activity implements View.OnClickListener
         {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.study_quest);
-            next_Question = (Button)findViewById(R.id.next_card_button);
             back_button = (Button)findViewById(R.id.back_button);
             show_answer = (Button)findViewById(R.id.show_ans_button);
             question = (TextView)findViewById(R.id.question_input);
-            next_Question.setOnClickListener(this);
             back_button.setOnClickListener(this);
             show_answer.setOnClickListener(this);
 
@@ -73,14 +70,6 @@ public class study extends Activity implements View.OnClickListener
                 answerActivity.putExtra(answer2, answer);
                 startActivity(answerActivity);
                 break;
-            }
-            case R.id.next_card_button:
-            {
-                currentQues = MainActivity.myDeck.getCard(false);
-                question.setText(currentQues.getQuestion());
-
-                break;
-
             }
             case R.id.back_button:
             {
