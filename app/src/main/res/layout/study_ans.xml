@@ -15,25 +15,41 @@
         android:textAlignment="center"
         android:textSize="50sp"
         android:layout_margin="20dp"
-        android:background="#ffb6b6b6"
+        android:background="#fff7f9fd"
         android:textColor="#ff1f36ff"
         android:gravity="center_vertical|center_horizontal" />
 
     <Button
-        android:id="@+id/back_button"
+        android:id="@+id/right_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back"
-        android:layout_weight="1.17"
+        android:text="Got it Right"
         android:gravity="center"
-        android:layout_gravity="center_horizontal"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginLeft="5dp"
         android:background="#ffb6b6b6"
-        android:textColor="#ff1f36ff"
-        android:textSize="20sp"/>
+        android:textColor="#ff00af29"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight=".24" />
+
+    <Button
+        android:id="@+id/wrong_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Got it Wrong"
+        android:layout_weight=".24"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#ffb6b6b6"
+        android:textColor="#ff000000"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal" />
 
 
 </LinearLayout>

@@ -39,6 +39,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
         myDeck = new Deck();
 
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
