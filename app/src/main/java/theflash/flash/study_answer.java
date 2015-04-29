@@ -13,7 +13,11 @@ import android.widget.TextView;
 public class study_answer extends Activity implements View.OnClickListener
 {
     private TextView answer;
-    private Button back_button;
+    //private Button back_button;
+    Button right_button;
+    Button wrong_button;
+    public static scoring score1;
+
 
     @Override
 
@@ -23,18 +27,32 @@ public class study_answer extends Activity implements View.OnClickListener
         setContentView(R.layout.study_ans);
 
         answer = (TextView) findViewById(R.id.answer_input);
-        back_button = (Button) findViewById(R.id.back_button);
-        back_button.setOnClickListener(this);
+        /*back_button = (Button) findViewById(R.id.back_button);
+        back_button.setOnClickListener(this); */
 
         initializeTextViews();
+
+        right_button = (Button) findViewById(R.id.right_button);
+        right_button.setOnClickListener(this);
+        wrong_button = (Button) findViewById(R.id.wrong_button);
+        wrong_button.setOnClickListener(this);
+
+        score1 = new scoring();
     }
 
     public void onClick(View v)
     {
        switch (v.getId())
        {
-           case R.id.back_button:
+           case R.id.right_button:
            {
+               score1.incRight();
+               finish();
+               break;
+           }
+           case R.id.wrong_button:
+           {
+               score1.incWrong();
                finish();
                break;
            }

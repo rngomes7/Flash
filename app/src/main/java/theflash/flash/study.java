@@ -26,6 +26,7 @@ public class study extends Activity implements View.OnClickListener
     private card currentQues;
     public static final String answer2 = "tag";
 
+
     @Override
 
         public void onCreate(Bundle savedInstanceState)
@@ -39,6 +40,8 @@ public class study extends Activity implements View.OnClickListener
             next_Question.setOnClickListener(this);
             back_button.setOnClickListener(this);
             show_answer.setOnClickListener(this);
+
+
 
             if(question.getText().toString().equals(""))
             {
@@ -84,6 +87,7 @@ public class study extends Activity implements View.OnClickListener
                 finish();
                 break;
             }
+
         }
 
     }
