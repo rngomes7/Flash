@@ -21,6 +21,7 @@ public class MainActivity extends Activity implements OnClickListener {
     private Button buttonstudy;
     private Button buttonscore;
     public static Deck myDeck;
+    public static scoring score1;
 
 
     @Override
@@ -39,6 +40,7 @@ public class MainActivity extends Activity implements OnClickListener {
         buttonscore.setOnClickListener(this);
 
         myDeck = new Deck();
+        score1 = new scoring();
 
 
     }

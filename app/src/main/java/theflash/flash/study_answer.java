@@ -16,7 +16,7 @@ public class study_answer extends Activity implements View.OnClickListener
     //private Button back_button;
     Button right_button;
     Button wrong_button;
-    public static scoring score1;
+
 
 
     @Override
@@ -37,7 +37,6 @@ public class study_answer extends Activity implements View.OnClickListener
         wrong_button = (Button) findViewById(R.id.wrong_button);
         wrong_button.setOnClickListener(this);
 
-        score1 = new scoring();
     }
 
     public void onClick(View v)
@@ -46,13 +45,13 @@ public class study_answer extends Activity implements View.OnClickListener
        {
            case R.id.right_button:
            {
-               score1.incRight();
+               MainActivity.score1.incRight();
                finish();
                break;
            }
            case R.id.wrong_button:
            {
-               score1.incWrong();
+               MainActivity.score1.incWrong();
                finish();
                break;
            }
